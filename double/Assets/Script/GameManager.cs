@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] panel = new GameObject[16];
     public int[] lockpanelpos = { -1,-1,-1};
-    public GameObject coinguage, gameclear, gameover,startpanel;
+    public GameObject coinguage,goal, gameclear, gameover,startpanel;
     public Text time_text,score_text,clear_text,num_over,num_clear,stage_text;
     public Animator panel_anim;
     public AudioClip score_SE;
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     private GameObject shuffleobj;
     private AudioSource audioSource;
 
-    GameObject panelobj,coinobj;
+    GameObject panelobj,coinobj,goalobj;
     [SerializeField] Canvas canvas;
 
     // Start is called before the first frame update
@@ -83,20 +83,27 @@ public class GameManager : MonoBehaviour
         {
             for (j = 0; j < 4; j++)
             {
-                panelobj=Instantiate(panel[i*4+j], new Vector3(-300.0f + i *100.0f, 150.0f - j * 100.0f, 0.0f), Quaternion.identity);
+                panelobj=Instantiate(panel[i*4+j], new Vector3(-525.0f + i *160.0f, 265.0f - j * 160.0f, 0.0f), Quaternion.identity);
                 panelobj.GetComponent<PanelBase>().panelNo = i * 4 + j;
                 panelobj.GetComponent<PanelBase>().x = i;
                 panelobj.GetComponent<PanelBase>().y = j;
                 panelobj.transform.SetParent(canvas.transform, false);   
             }
         }
-        
-        //ゲージ生成
+
+        //ゲージ作成
         for (i = 0; i < 4; i++)
         {
-            coinobj = Instantiate(coinguage, new Vector3(-300.0f + i * 100.0f, 250.0f - i * 1.0f, 0.0f), Quaternion.identity); ;
+            coinobj = Instantiate(coinguage, new Vector3(-525.0f + i * 160.0f, 415.0f - i * 1.0f, 0.0f), Quaternion.identity); ;
             coinobj.GetComponent<CoinManager>().coin = coins[i];
             coinobj.transform.SetParent(canvas.transform, false);
+        }
+
+        //ゴール生成
+        for (i = 0; i < 4; i++)
+        {
+            goalobj = Instantiate(goal, new Vector3(-525.0f + i * 160.0f, -450.0f, 0.0f), Quaternion.identity);
+            goalobj.transform.SetParent(canvas.transform, false);
         }
 
         clear_text.text = clearscore.ToString("f0");

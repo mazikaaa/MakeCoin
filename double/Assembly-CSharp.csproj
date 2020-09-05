@@ -117,6 +117,7 @@
     <Compile Include="Assets\NCMB\Script\Task\NCMBUserTaskExtension.cs" />
     <Compile Include="Assets\NCMB\Script\Task\NCMBUserTaskMethods.cs" />
     <Compile Include="Assets\Scenes\QuickStartScene\QuickStart.cs" />
+    <Compile Include="Assets\Script\CameraManager.cs" />
     <Compile Include="Assets\Script\CoinManager.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\GoalChecker.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Assets\Script\Panel\plus.cs" />
     <Compile Include="Assets\Script\Panel\Zero.cs" />
     <Compile Include="Assets\Script\PanelBase.cs" />
+    <Compile Include="Assets\Script\RectManager.cs" />
     <Compile Include="Assets\Script\StartManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mazik/MakeCoin/double/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
