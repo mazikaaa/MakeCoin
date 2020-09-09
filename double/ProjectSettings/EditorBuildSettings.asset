@@ -12,36 +12,39 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroScene.unity
     guid: e7883b9a7d136434fa092ea215743c7c
   - enabled: 1
-    path: Assets/Scenes/PanelScene1.unity
+    path: Assets/Scenes/Game/PanelScene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/PanelScene2.unity
+    path: Assets/Scenes/Game/PanelScene2.unity
     guid: 4edb8cf12845a574e8c2b1b138970463
   - enabled: 1
-    path: Assets/Scenes/PanelScene3.unity
+    path: Assets/Scenes/Game/PanelScene3.unity
     guid: 9fca9d7e05730c74994daa98439642a2
   - enabled: 1
-    path: Assets/Scenes/PanelScene4.unity
+    path: Assets/Scenes/Game/PanelScene4.unity
     guid: 40f90b5be7629244e84fd3649841bbfc
   - enabled: 1
-    path: Assets/Scenes/PanelScene5.unity
+    path: Assets/Scenes/Game/PanelScene5.unity
     guid: ecef6fbd2a831824395581436e713d43
   - enabled: 1
-    path: Assets/Scenes/PanelScene6.unity
+    path: Assets/Scenes/Game/PanelScene6.unity
     guid: a7832b161565f0a4fa97e94ed4786b99
   - enabled: 1
-    path: Assets/Scenes/PanelScene7.unity
+    path: Assets/Scenes/Game/PanelScene7.unity
     guid: b626bbc06e6cbb148a3acb6d1f47171d
   - enabled: 1
-    path: Assets/Scenes/PanelScene8.unity
+    path: Assets/Scenes/Game/PanelScene8.unity
     guid: e52e8c757b07cd14d9d1092839d456d6
   - enabled: 1
-    path: Assets/Scenes/PanelScene9.unity
+    path: Assets/Scenes/Game/PanelScene9.unity
     guid: 6010318a6ef7e324e99f8ddc98eceb31
   - enabled: 1
-    path: Assets/Scenes/PanelScene10.unity
+    path: Assets/Scenes/Game/PanelScene10.unity
     guid: a7cc19e6216d8824586d12268f7e52d8
   - enabled: 1
     path: Assets/naichilab/unity-simple-ranking/Scenes/Ranking.unity
     guid: 152244f5855414ac4a3874f14efa583c
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: c9779cec7c26b0a4ea72a28af5723496
   m_configObjects: {}

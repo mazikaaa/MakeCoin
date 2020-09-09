@@ -14,15 +14,11 @@ public class GameManager : MonoBehaviour
     public Animator panel_anim;
     public AudioClip score_SE;
 
-    public int shufflepanelNo= -1;
-    public bool shuffleflag = false;//パネルを一つ選択しているか
-    public bool holeflag = false;//選択したパネルが穴か
     public float shuffletimeover;//シャッフルできる時間を決める
     public int clearscore;//クリアするためのコインの枚数
 
     private int[] coins = new int[4];
     private float shuffletime = 0.0f;
-    private float shuffle_x=0, shuffle_y=0;//パネルの位置
     private bool shuffletimeflag = false;//シャッフル出来る時間かどうかを判定
     private int i, j;
     private int x, y;//パネルの座標
@@ -32,7 +28,6 @@ public class GameManager : MonoBehaviour
 
     private int coinstack;//前のステージからのコインの持ち込み
 
-    private GameObject shuffleobj;
     private AudioSource audioSource;
 
     GameObject panelobj,coinobj,goalobj;
@@ -87,6 +82,7 @@ public class GameManager : MonoBehaviour
                 panelobj.GetComponent<PanelBase>().panelNo = i * 4 + j;
                 panelobj.GetComponent<PanelBase>().x = i;
                 panelobj.GetComponent<PanelBase>().y = j;
+                panelobj.GetComponent<PanelBase>().shuffleflag = false;
                 panelobj.transform.SetParent(canvas.transform, false);   
             }
         }
@@ -129,78 +125,6 @@ public class GameManager : MonoBehaviour
             {
                 CoinStart();
             }
-        }
-
-    }
-
-    //選択した二つのパネルを交換
-    public void  ShufflePanel(int panelNo,GameObject panel)
-    {
-        //もうすでにシャッフルするパネルを一つ選んでいる時
-        if (shuffleflag)
-        {
-            int locx = panel.GetComponent<PanelBase>().x;
-            int locy = panel.GetComponent<PanelBase>().y;
-
-            int dis = Mathf.Abs(locx - x)+ Mathf.Abs(locy - y);
-
-            //パネルが隣り合っていたら
-            if (dis<=1)
-            {
-
-                //シャッフルするパネルの内,どちらが穴パネルだったら
-                if (holeflag)
-                {
-                    float posx = panel.transform.position.x;
-                    float posy = panel.transform.position.y;
-
-                    shuffleobj.transform.position = new Vector3(posx, posy, 0);
-                    panel.transform.position = new Vector3(shuffle_x, shuffle_y, 0);
-                    shuffleobj.GetComponent<PanelBase>().x = locx;
-                    shuffleobj.GetComponent<PanelBase>().y = locy;
-                    panel.GetComponent<PanelBase>().x = this.x;
-                    panel.GetComponent<PanelBase>().y = this.y;
-
-                    panel.GetComponent<PanelBase>().clickflag = false;
-                    shuffleobj.GetComponent<PanelBase>().clickflag = false;
-                    panel.GetComponent<PanelBase>().Changeframe(0);
-                    shuffleobj.GetComponent<PanelBase>().Changeframe(0);
-                    shuffleobj = null;
-                    shuffleflag = false;
-                    holeflag = false;
-                }
-                else
-                {
-                    shuffle_x = 0.0f;
-                    shuffle_y = 0.0f;
-                    shuffleobj.GetComponent<PanelBase>().clickflag = false;
-                    panel.GetComponent<PanelBase>().clickflag = false;
-                    panel.GetComponent<PanelBase>().Changeframe(0);
-                    shuffleobj.GetComponent<PanelBase>().Changeframe(0);
-                    shuffleobj = null;
-                    shuffleflag = false;
-
-                }
-            }
-            else
-            {
-                shuffleobj.GetComponent<PanelBase>().clickflag = false;
-                panel.GetComponent<PanelBase>().clickflag = false;
-                panel.GetComponent<PanelBase>().Changeframe(0);
-                shuffleobj.GetComponent<PanelBase>().Changeframe(0);
-                shuffleobj = null;
-                shuffleflag = false;
-                holeflag = false;
-            }
-        }
-        else
-        {
-            this.x = panel.GetComponent<PanelBase>().x;
-            this.y = panel.GetComponent<PanelBase>().y;
-            shuffle_x = panel.transform.position.x;
-            shuffle_y = panel.transform.position.y;
-            shuffleobj = panel;
-            shuffleflag = true;
         }
 
     }
@@ -258,6 +182,13 @@ public class GameManager : MonoBehaviour
     private void GameStart()
     {
         shuffletimeflag = true;
+        GameObject[] panels = GameObject.FindGameObjectsWithTag("Panel");
+
+        foreach (GameObject panel in panels)
+        {
+            panel.GetComponent<PanelBase>().shuffleflag = true;
+        }
+
     }
 
     public void GameClear()
