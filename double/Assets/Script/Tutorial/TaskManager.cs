@@ -16,7 +16,7 @@ public class TaskManager : MonoBehaviour
     protected Text TutorialText;
     protected GameObject NextButton;
     protected GameObject BackButton;
-    public GameObject GoButton;
+    public GameObject GoButton,text;
 
     // チュートリアルタスク
     protected ITutorialTask currentTask;
@@ -75,6 +75,9 @@ public class TaskManager : MonoBehaviour
             }else if (Tasknum==11)
             {
                 GoButton.SetActive(true);
+            }else if (Tasknum == 1)
+            {
+                text.SetActive(true);
             }
         }
     }

@@ -214,6 +214,11 @@ public class GameManager : MonoBehaviour
         gameover.SetActive(true);
     }
 
+    public void HasteTimeButton()
+    {
+        shuffletime = shuffletimeover;
+    }
+
     public void GoOverStartButton()
     {
 

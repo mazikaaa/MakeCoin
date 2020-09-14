@@ -4,11 +4,16 @@ ScriptsOnlyBuild:
     - CoinManager
     - GameManager
     - GoalChecker
+    - GoalChecker_Tutorial
     - IntroManager
     - PanelBase
     - Plane
+    - ShuffleManager
     - StartManager
+    - TaskManager
+    - TutorialManager
     - Zero
+    - Zero_Tutorial
     - div
     - minus
     - moveleft
@@ -20,13 +25,9 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
-    UnityEditor.TestRunner.dll:
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -42,6 +43,834 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
+    Assets/Scenes/Game/PanelScene1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9776}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene10.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9776}
+    - Class: 114
+      Script: {instanceID: 10028}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10372}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10028}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10372}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene4.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene5.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene6.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9776}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10028}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene7.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9776}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10028}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10372}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene8.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9776}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game/PanelScene9.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9776}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10028}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10372}
+    - Class: 114
+      Script: {instanceID: 10446}
+    - Class: 114
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 10730}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/IntroScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -58,6 +887,10 @@ ScriptsOnlyBuild:
     - Class: 61
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -80,819 +913,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9776}
     - Class: 114
-      Script: {instanceID: 10020}
+      Script: {instanceID: 10028}
     - Class: 114
-      Script: {instanceID: 10290}
+      Script: {instanceID: 10314}
     - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9776}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene10.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9776}
-    - Class: 114
-      Script: {instanceID: 10020}
-    - Class: 114
-      Script: {instanceID: 10030}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10346}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10554}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene2.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10020}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10346}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene3.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10030}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10554}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene4.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10030}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10554}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene5.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10030}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10554}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene6.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9776}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10020}
-    - Class: 114
-      Script: {instanceID: 10030}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10554}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene7.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9776}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10020}
-    - Class: 114
-      Script: {instanceID: 10030}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10346}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10554}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene8.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9776}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10030}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10554}
-    - Class: 114
-      Script: {instanceID: 10698}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PanelScene9.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9392}
-    - Class: 114
-      Script: {instanceID: 9426}
-    - Class: 114
-      Script: {instanceID: 9428}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9448}
-    - Class: 114
-      Script: {instanceID: 9484}
-    - Class: 114
-      Script: {instanceID: 9486}
-    - Class: 114
-      Script: {instanceID: 9776}
-    - Class: 114
-      Script: {instanceID: 9836}
-    - Class: 114
-      Script: {instanceID: 10020}
-    - Class: 114
-      Script: {instanceID: 10030}
-    - Class: 114
-      Script: {instanceID: 10054}
-    - Class: 114
-      Script: {instanceID: 10282}
-    - Class: 114
-      Script: {instanceID: 10290}
-    - Class: 114
-      Script: {instanceID: 10346}
-    - Class: 114
-      Script: {instanceID: 10420}
-    - Class: 114
-      Script: {instanceID: 10554}
-    - Class: 114
-      Script: {instanceID: 10698}
+      Script: {instanceID: 10446}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -945,7 +970,94 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9486}
     - Class: 114
-      Script: {instanceID: 9868}
+      Script: {instanceID: 9870}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/TutorialScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9426}
+    - Class: 114
+      Script: {instanceID: 9428}
+    - Class: 114
+      Script: {instanceID: 9434}
+    - Class: 114
+      Script: {instanceID: 9440}
+    - Class: 114
+      Script: {instanceID: 9448}
+    - Class: 114
+      Script: {instanceID: 9484}
+    - Class: 114
+      Script: {instanceID: 9486}
+    - Class: 114
+      Script: {instanceID: 9776}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 9916}
+    - Class: 114
+      Script: {instanceID: 9934}
+    - Class: 114
+      Script: {instanceID: 10036}
+    - Class: 114
+      Script: {instanceID: 10040}
+    - Class: 114
+      Script: {instanceID: 10066}
+    - Class: 114
+      Script: {instanceID: 10078}
+    - Class: 114
+      Script: {instanceID: 10166}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10372}
+    - Class: 114
+      Script: {instanceID: 10584}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1006,7 +1118,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9740}
     - Class: 114
-      Script: {instanceID: 10654}
+      Script: {instanceID: 10684}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1022,12 +1134,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 4cc8e03b65eb5b8f82d85b6de33c4af0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RectManager
   - hash:
       serializedVersion: 2
       Hash: 984dcc0ba3707b7691fbdca8ff508d28
@@ -1072,7 +1178,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 9496002074baac30708b59f95335a1ec
+      Hash: 4c93b54b39df990b7eaf79698dc03b4e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1558,16 +1664,34 @@ ScriptsOnlyBuild:
     className: StartManager
   - hash:
       serializedVersion: 2
+      Hash: a14897593d38ed4f503c9654c15f39a6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TutorialManager
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
   - hash:
       serializedVersion: 2
+      Hash: e12e012bd34ed0204389166754a0f8e8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TaskManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClearTask
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1594,6 +1718,12 @@ ScriptsOnlyBuild:
     className: moveright
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GoalChecker_Tutorial
+  - hash:
+      serializedVersion: 2
       Hash: fb1576e32e1d2265cec8e143c7ee54d8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1606,10 +1736,46 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameTask1
+  - hash:
+      serializedVersion: 2
       Hash: e2a430a9b52b5e752c95d7e2aebe9b68
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: minus
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameTask4
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Zero_Tutorial
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameTask3
+  - hash:
+      serializedVersion: 2
+      Hash: 53219e4f7303d63f1d02185a3e74a105
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShuffleManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FinishTask
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1702,6 +1868,12 @@ ScriptsOnlyBuild:
     className: PanelBase
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DropTask1
+  - hash:
+      serializedVersion: 2
       Hash: ee0cef6caaac8ae485bfa82f000f0f7b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1732,10 +1904,16 @@ ScriptsOnlyBuild:
     className: Zero
   - hash:
       serializedVersion: 2
-      Hash: e096ec039e3c7cf59964756602d347ea
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CameraManager
+    className: DropTask1_2
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameTask4_2
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1786,6 +1964,12 @@ ScriptsOnlyBuild:
     className: RankingNode
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameTask2
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1812,15 +1996,16 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/IntroScene.unity
-  - Assets/Scenes/PanelScene1.unity
-  - Assets/Scenes/PanelScene2.unity
-  - Assets/Scenes/PanelScene3.unity
-  - Assets/Scenes/PanelScene4.unity
-  - Assets/Scenes/PanelScene5.unity
-  - Assets/Scenes/PanelScene6.unity
-  - Assets/Scenes/PanelScene7.unity
-  - Assets/Scenes/PanelScene8.unity
-  - Assets/Scenes/PanelScene9.unity
-  - Assets/Scenes/PanelScene10.unity
+  - Assets/Scenes/Game/PanelScene1.unity
+  - Assets/Scenes/Game/PanelScene2.unity
+  - Assets/Scenes/Game/PanelScene3.unity
+  - Assets/Scenes/Game/PanelScene4.unity
+  - Assets/Scenes/Game/PanelScene5.unity
+  - Assets/Scenes/Game/PanelScene6.unity
+  - Assets/Scenes/Game/PanelScene7.unity
+  - Assets/Scenes/Game/PanelScene8.unity
+  - Assets/Scenes/Game/PanelScene9.unity
+  - Assets/Scenes/Game/PanelScene10.unity
   - Assets/naichilab/unity-simple-ranking/Scenes/Ranking.unity
+  - Assets/Scenes/TutorialScene.unity
   playerPath: C:/Users/mazik/MakeCoin/double/makecoin_game.apk

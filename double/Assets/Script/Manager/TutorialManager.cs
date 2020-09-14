@@ -69,7 +69,7 @@ public class TutorialManager : MonoBehaviour
         {
             for (j = 0; j < 4; j++)
             {
-                panelobj = Instantiate(panel[i * 4 + j], new Vector3(-525.0f + i * 160.0f, 265.0f - j * 160.0f, 0.0f), Quaternion.identity);
+                panelobj = Instantiate(panel[i * 4 + j], new Vector3(-625.0f + i * 160.0f, 265.0f - j * 160.0f, 0.0f), Quaternion.identity);
                 panelobj.GetComponent<PanelBase>().panelNo = i * 4 + j;
                 panelobj.GetComponent<PanelBase>().x = i;
                 panelobj.GetComponent<PanelBase>().y = j;
@@ -81,7 +81,7 @@ public class TutorialManager : MonoBehaviour
         //ゲージ作成
         for (i = 0; i < 4; i++)
         {
-            coinobj = Instantiate(coinguage, new Vector3(-525.0f + i * 160.0f, 415.0f - i * 1.0f, 0.0f), Quaternion.identity); ;
+            coinobj = Instantiate(coinguage, new Vector3(-625.0f + i * 160.0f, 415.0f - i * 1.0f, 0.0f), Quaternion.identity); ;
             coinobj.GetComponent<CoinManager>().coin = coins[i];
             coinobj.transform.SetParent(canvas.transform, false);
         }
@@ -89,7 +89,7 @@ public class TutorialManager : MonoBehaviour
         //ゴール生成
         for (i = 0; i < 4; i++)
         {
-            goalobj = Instantiate(goal, new Vector3(-525.0f + i * 160.0f, -450.0f, 0.0f), Quaternion.identity);
+            goalobj = Instantiate(goal, new Vector3(-625.0f + i * 160.0f, -450.0f, 0.0f), Quaternion.identity);
             goalobj.transform.SetParent(canvas.transform, false);
         }
 
