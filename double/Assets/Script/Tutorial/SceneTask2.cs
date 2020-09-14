@@ -33,6 +33,8 @@ public class SceneTask2 : ITutorialTask
 
     public void NextTask()
     {
+        GameObject text = GameObject.Find("LeftText");
+        text.SetActive(false);
     }
 
     public bool CheckTask()

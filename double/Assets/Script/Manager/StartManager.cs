@@ -21,7 +21,14 @@ public class StartManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+#if UNITY_ANDROID
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.runInBackground = false;
+            Application.Quit();
+            return;
+        }
+#endif
     }
 
     public void StartStageButton()
