@@ -4,4 +4,6 @@
 https://unityroom.com/games/makecoin<br>
 
 ## タイトル:MakeCoin
+### ジャンル:パズルゲーム
+
 
