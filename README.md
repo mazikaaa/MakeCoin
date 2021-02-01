@@ -19,3 +19,7 @@ unity1weekというゲームジャムで作成したゲームになっていま�
 ![MakeCoin_ドロップ](https://user-images.githubusercontent.com/45326553/106385487-edb2b400-6413-11eb-9362-84a754f05c1a.png)
   ##### 開発環境
   ・Unity(2019.1.14f)  
+
+## ソースコードについて
+以下のURLより見ることが出来ます。  
+https://github.com/mazikaaa/rollingsushi/tree/master/rollingsushi/Assets/Script
